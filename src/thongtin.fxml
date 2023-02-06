@@ -5,16 +5,16 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane fx:controller="ThongTin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThongTin">
    <children>
       <TextField fx:id="txtFullName" layoutX="29.0" layoutY="55.0" promptText="Full name" />
       <TextField fx:id="txtEmail" layoutX="29.0" layoutY="121.0" promptText="Email" />
-      <Button onAction="#submit" layoutX="29.0" layoutY="187.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="160.0" text="Submit" />
+      <Button layoutX="29.0" layoutY="187.0" mnemonicParsing="false" onAction="#submit" prefHeight="27.0" prefWidth="160.0" text="Submit" />
       <Text fx:id="txtInfo" layoutX="380.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thong tin" wrappingWidth="250.21630859375">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
+      <ListView onMouseClicked="#edit" fx:id="lv" layoutX="320.0" layoutY="87.0" prefHeight="287.0" prefWidth="268.0" />
    </children>
 </Pane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="controllers.CreateClassController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="RED" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a new class" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Button onAction="#goToClassList" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: red;" text="&lt;&lt; Back" textFill="WHITE" />
+      <Line endX="473.0" layoutX="115.0" layoutY="66.0" startX="-100.0" stroke="RED" strokeType="OUTSIDE" />
+      <TextField layoutX="100.0" layoutY="106.0" prefHeight="50.0" prefWidth="401.0" promptText="Class Name" style="-fx-border-color: red;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="101.0" layoutY="189.0" prefHeight="50.0" prefWidth="401.0" promptText="Room" style="-fx-border-color: red;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="376.0" layoutY="269.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="126.0" style="-fx-background-color: red;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

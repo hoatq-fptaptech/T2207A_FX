@@ -13,11 +13,11 @@
             <Font size="29.0" />
          </font>
       </Text>
-      <TableView layoutX="14.0" layoutY="74.0" prefHeight="316.0" prefWidth="573.0" style="-fx-background-color: #fdfdfd;">
+      <TableView fx:id="tbClasses" layoutX="14.0" layoutY="74.0" prefHeight="316.0" prefWidth="573.0" style="-fx-background-color: #fdfdfd;">
         <columns>
-          <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="300.0" text="Name" />
-            <TableColumn prefWidth="122.0" text="Room" />
+          <TableColumn fx:id="cId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="cName" prefWidth="300.0" text="Name" />
+            <TableColumn fx:id="cRoom" prefWidth="122.0" text="Room" />
             <TableColumn prefWidth="67.0" text="Action" />
         </columns>
       </TableView>

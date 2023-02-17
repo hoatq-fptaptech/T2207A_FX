@@ -34,4 +34,9 @@ public class Classes {
     public void setRoom(String room) {
         this.room = room;
     }
+
+    @Override
+    public String toString() {
+        return this.getName();
+    }
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="controllers.StudentsController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="RED" layoutX="204.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students List">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Button onAction="#goToHome" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: red;" text="&lt;&lt; Back" textFill="WHITE" />
+      <Button onAction="#goToCreate" layoutX="540.0" layoutY="11.0" mnemonicParsing="false" style="-fx-background-color: red;" text="+" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tbStudents" layoutX="14.0" layoutY="75.0" prefHeight="310.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="cId" prefWidth="39.0" text="ID" />
+          <TableColumn fx:id="cName" prefWidth="124.0" text="Name" />
+            <TableColumn fx:id="cEmail" prefWidth="97.0" text="Email" />
+            <TableColumn fx:id="cBirthday" prefWidth="75.0" text="Birthday" />
+            <TableColumn fx:id="cGender" prefWidth="76.0" text="Gender" />
+            <TableColumn fx:id="cClass" prefWidth="90.0" text="Class" />
+            <TableColumn fx:id="cAction" prefWidth="67.0" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

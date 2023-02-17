@@ -13,7 +13,7 @@
             <Font size="29.0" />
          </font>
       </Button>
-      <Button layoutX="329.0" layoutY="119.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="176.0" style="-fx-background-color: red;" text="Students" textFill="WHITE">
+      <Button onAction="#goToStudents" layoutX="329.0" layoutY="119.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="176.0" style="-fx-background-color: red;" text="Students" textFill="WHITE">
          <font>
             <Font size="29.0" />
          </font>

@@ -42,7 +42,7 @@ public class StudentsController implements Initializable {
         cClass.setCellValueFactory(new PropertyValueFactory<>("class_id"));
 
         try {
-            Database db = new Database();
+            Database db = Database.getInstance();
             Statement stt = db.getStatement();
             String sql = "select * from sinhvien";
             ResultSet rs = stt.executeQuery(sql);

@@ -33,7 +33,7 @@ public class ClassesController implements Initializable {
         cRoom.setCellValueFactory(new PropertyValueFactory<>("room"));
         ObservableList<Classes> list = FXCollections.observableArrayList();
         try {
-            Database db = new Database();
+            Database db = Database.getInstance();
             Statement stt = db.getStatement();
             String sql = "select * from lophoc";
             ResultSet rs = stt.executeQuery(sql);

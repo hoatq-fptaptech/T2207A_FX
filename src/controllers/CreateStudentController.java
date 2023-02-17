@@ -33,7 +33,7 @@ public class CreateStudentController implements Initializable {
         cbGender.setItems(gt);
 
         try {
-            Database db = new Database();
+            Database db = Database.getInstance();
             Statement stt = db.getStatement();
             String sql = "select * from lophoc";
             ResultSet rs = stt.executeQuery(sql);

@@ -29,7 +29,7 @@
       <DatePicker fx:id="txtBirthday" layoutX="39.0" layoutY="265.0" prefHeight="37.0" prefWidth="222.0" promptText="Birthday" />
       <ComboBox fx:id="cbGender" layoutX="357.0" layoutY="105.0" prefHeight="37.0" prefWidth="202.0" promptText="Gender" />
       <ComboBox fx:id="cbClass" layoutX="357.0" layoutY="187.0" prefHeight="37.0" prefWidth="202.0" promptText="Class" />
-      <Button layoutX="355.0" layoutY="265.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="202.0" style="-fx-background-color: red;" text="Submit" textFill="WHITE">
+      <Button onAction="#submit" layoutX="355.0" layoutY="265.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="202.0" style="-fx-background-color: red;" text="Submit" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>

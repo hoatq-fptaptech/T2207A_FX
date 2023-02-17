@@ -59,6 +59,6 @@ public class CreateStudentController implements Initializable {
         String email = txtEmail.getText();
         String birthday = Date.valueOf(txtBirthday.getValue()).toString();
         String gender = cbGender.getValue();
-        Integer id = cbClass.getValue().getId();
+        Integer class_id = cbClass.getValue().getId();
     }
 }

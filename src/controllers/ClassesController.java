@@ -1,5 +1,6 @@
 package controllers;
 
+import daopattern.ClassesDAO;
 import database.Database;
 import entities.Classes;
 import javafx.collections.FXCollections;
@@ -18,6 +19,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class ClassesController implements Initializable {
@@ -31,23 +33,11 @@ public class ClassesController implements Initializable {
         cId.setCellValueFactory(new PropertyValueFactory<>("id"));
         cName.setCellValueFactory(new PropertyValueFactory<>("name"));
         cRoom.setCellValueFactory(new PropertyValueFactory<>("room"));
-        ObservableList<Classes> list = FXCollections.observableArrayList();
-        try {
-            Database db = Database.getInstance();
-            Statement stt = db.getStatement();
-            String sql = "select * from lophoc";
-            ResultSet rs = stt.executeQuery(sql);
-            while (rs.next()){
-               Integer id = rs.getInt("id");
-               String name = rs.getString("name");
-               String room = rs.getString("room");
-               Classes c = new Classes(id,name,room);
-               list.add(c);
-            }
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-        tbClasses.setItems(list);
+
+        ClassesDAO cd = ClassesDAO.getInstance();
+        ArrayList<Classes> dslh = cd.getAll();
+        tbClasses.getItems().addAll(dslh);
+        tbClasses.refresh();
     }
 
     public void goToHome(ActionEvent event) throws Exception{

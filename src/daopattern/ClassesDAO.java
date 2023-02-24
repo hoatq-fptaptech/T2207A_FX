@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class ClassesDAO { // singleton pattern
+public class ClassesDAO implements DAOInterface<Classes>{ // singleton pattern
     private static ClassesDAO instance;
 
     private ClassesDAO(){
@@ -96,6 +96,11 @@ public class ClassesDAO { // singleton pattern
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
+        return null;
+    }
+
+    // generic method
+    public <N> Classes findOne(N id){//  khi sử dụng, giá trị truyền vào sẽ là kiểu dữ liệu
         return null;
     }
 }

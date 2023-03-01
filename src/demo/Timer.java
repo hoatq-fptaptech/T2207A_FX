@@ -14,7 +14,7 @@ public class Timer {
     boolean running = false;
 
     public void start(ActionEvent actionEvent) {
-        if(!running){
+        if(!running && min >=0 && sec >=0){
            running = true;
            new Thread(()->{
                while(running){
@@ -41,8 +41,14 @@ public class Timer {
     }
 
     public void pause(ActionEvent actionEvent) {
+        running = false;
     }
 
     public void stop(ActionEvent actionEvent) {
+        running = false;
+        min = 0;
+        sec = 0;
+        lbMin.setText("00");
+        lbSec.setText("00");
     }
 }

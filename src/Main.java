@@ -44,7 +44,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception
     {
         HomeController.rootStage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("resources/home.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("resources/timer.fxml"));
         primaryStage.setScene(new Scene(root,600,400));
         primaryStage.show();
     }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.Timer">
+   <children>
+      <Label  layoutX="177.0" layoutY="79.0" prefHeight="93.0" prefWidth="93.0" style="-fx-background-color: black; -fx-padding: 10px;" textFill="WHITE">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Text layoutX="287.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="12.890625">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Text>
+      <Label  layoutX="320.0" layoutY="79.0" prefHeight="93.0" prefWidth="93.0" style="-fx-background-color: black; -fx-padding: 10px;" textFill="WHITE">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Button layoutX="177.0" layoutY="218.0" mnemonicParsing="false" onAction="#start" text="Start">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="255.0" layoutY="218.0" mnemonicParsing="false" onAction="#pause" text="Pause">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="349.0" layoutY="218.0" mnemonicParsing="false" onAction="#stop" text="Stop">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Text fx:id="lbMin" fill="WHITE" layoutX="187.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Text>
+      <Text fx:id="lbSec" fill="WHITE" layoutX="330.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
